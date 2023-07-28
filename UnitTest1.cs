@@ -30,7 +30,7 @@ namespace Dockers
             options.AddArgument("--headless");
             options.AddArgument("--disable-gpu");
 
-            string hubUrl = "http://localhost:4444";
+            string hubUrl = "http://selenium-hub:4444";
             driver = new RemoteWebDriver(new Uri(hubUrl), options.ToCapabilities());
             driver.Navigate().GoToUrl("https://automationintesting.online/");
 
