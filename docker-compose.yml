@@ -49,3 +49,10 @@ services:
       - selenium-hub
     links:
       - selenium-hub
+
+  k6-tests:
+    build: ./Performance/Docker
+    depends_on:
+      - selenium-hub
+    links:
+      - selenium-hub
