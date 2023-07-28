@@ -8,7 +8,7 @@ WORKDIR /app
 # Clone your test project repository
 RUN git clone https://github.com/eneskuehn/Dockerized.git
 
-WORKDIR /app/Dockers
+WORKDIR /app/Dockerized
 
 RUN dotnet build 
 
