@@ -4,9 +4,11 @@
 RUN apt-get update 
 RUN apt-get install -y git
 
+
 WORKDIR /app
 # Clone your test project repository
 RUN git clone https://github.com/eneskuehn/Dockerized.git
+
 
 WORKDIR /app/Dockerized
 
