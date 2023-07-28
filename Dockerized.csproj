@@ -19,4 +19,13 @@
     <PackageReference Include="SeleniumExtras.WaitHelpers" Version="1.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Performance\Docker\Dockerfile">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Performance\SmokeTest.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
